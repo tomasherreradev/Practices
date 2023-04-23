@@ -1,0 +1,129 @@
+:root {
+    --fuente: 'Josefin Sans', sans-serif;
+
+    --blanco: #FFFFFF;
+    --lgray: hsl(212, 45%, 89%);
+    --blue: hsl(220, 15%, 55%);
+    --darkBlue: hsl(218, 44%, 22%);
+}
+
+/* html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+} */
+
+
+body {
+    font-family: var(--fuenteParrafos);
+    font-size: 1.6rem;
+    line-height: 2;
+}
+
+/*GLOBALES*/
+
+a {
+    text-decoration: none;
+}
+
+h1, h2, h3, h4 {
+    font-family: var(--fuenteHeading);
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 4.8rem;
+}
+
+h2 {
+    font-size: 4rem;
+}
+
+h3 {
+    font-size: 3.2rem;
+}
+
+h4 {
+    font-size: 2.8rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+/*UTILIDADES*/
+
+.no-margin {
+    margin: 0;
+}
+.no-padding {
+    padding: 0;
+}
+.centrar-texto {
+    text-align: center;
+}
+
+
+/*BODY*/
+
+.bg {
+    background-image: url(../images/fondo.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contenedor {
+    display: flex;
+    height: 60rem;
+    max-width: 200rem;
+    width: 85%;
+    margin: 0 auto;
+    background-color: var(--blue);
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+
+.qr {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    padding: 1.8rem;
+    text-align: center;
+    max-width: 70%;
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    border-radius: 10px;
+    max-height: 50rem;
+}
+
+
+.qr__img {
+    border-radius: 10px;
+}
+
+.qr__textos h2 {
+    font-family: var(--fuente);
+    font-size: 1.8rem;
+    text-align: center;
+    font-weight: 700;
+}
+
+.qr__textos p {
+    font-size: 1.5rem;
+    font-weight: 100;
+    color: var(--lgray);
+}
+
+@media (min-width: 992px) {
+    .qr {
+        max-width: 20%;
+    }
+   .contenedor {
+        height: 70rem;
+    }
+}
