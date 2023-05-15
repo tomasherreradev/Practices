@@ -1,0 +1,6 @@
+//mixins
+@mixin phone {
+    @media (max-width: 480px) {
+        @content; //sirve para que los media queries funcionen xd
+    }
+}
